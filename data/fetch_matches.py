@@ -1,7 +1,6 @@
 import pandas as pd
 
 def load_matches():
-    url = "https://projects.fivethirtyeight.com/soccer-api/club/spi_matches_latest.csv"
-    df = pd.read_csv(url)
+    df = pd.read_csv("data/spi_matches.csv")
     df = df[df["league"].notna()]
     return df
