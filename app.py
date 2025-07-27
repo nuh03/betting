@@ -17,4 +17,4 @@ matches = df[["team1", "team2", "spi1", "spi2", "prob1", "prob2", "probtie", "od
 preds = predict(model, df)
 value_bets = find_value_bets(df, preds)
 
-st.dataframe(value_bets.style.highlight_max(axis=1))
+st.dataframe(value_bets)
